@@ -1,0 +1,492 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url("fonts/Minecraft.ttf") format("truetype");
+  }
+  
+  #myVideo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    z-index: -100;
+  }
+
+body {
+    font-family: "Minecraft", sans-serif;
+    margin: 0;  
+    padding: 0; 
+    
+    height: 100vh;  
+
+    }
+    
+
+/* #region */ /* home */
+
+
+.home {
+    position: relative;
+    display:flex;
+    animation: homeTransition 2s;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+@keyframes homeTransition {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    
+    to{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+
+}
+.hometext{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10%;
+    left: px;
+}
+
+
+.home2 {
+    position: relative;
+    display:flex;
+    animation: homeTransition 3s;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+
+.homedialogbox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25%;
+    margin-right: 25px;
+   
+    width: 455px;
+    height: 100px;
+    border: 3px solid;
+    border-radius: 5px;
+   
+    background-color: #e9c95c;
+    box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.5)
+    
+}  
+
+
+.avatarbox {
+    position: absolute;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+    left: 3px;
+    background-color: antiquewhite;
+}
+
+
+.avatarbox img {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    left: -9px;
+    top: -10px;
+}
+
+
+.homeblinkingtext {
+    overflow: hidden; 
+    border-right: .20em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+ 
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+.dialogboxlegend {
+    position: absolute;
+    left: 100px;
+   border: none;
+
+}
+
+/* #endregion */
+
+/* #region */ /*profile*/
+.profileContainer {
+    position: relative;
+    display:flex;
+    animation: transitionIn 2s;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    
+    to{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+
+.profileContainer img {
+    position: absolute;
+    width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    
+}
+
+
+.profile-text {
+    position: absolute;
+    width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+}
+
+
+.profileheader {
+    position: absolute;
+    color: #592323;
+    top:5%;
+    left: 5%;
+}
+
+
+.page2 {
+    position: absolute;
+    width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+}
+
+
+.aboutme {
+    position: absolute;
+    color: #592323;
+    top:5%;
+    left: 53%;
+}
+
+
+.aboutmetext {
+    position: absolute;
+    color: #592323;
+    top:55%;
+    left: 0%;
+    width: 340px;
+    font-size: 16px;
+}
+
+
+#treeprofile {
+    position: absolute;
+    right: 40px;
+    top: 320px;
+    height: 200px;
+    width: auto;
+    opacity: 50%;
+}
+
+
+.table1 {
+    position: absolute;
+    top:15%;
+    left: 5%;
+    
+}
+
+.table1 , td, th {
+	border: 0px solid #595959;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+td, th {
+    vertical-align: top;
+	padding: 5px;
+	width: 150px;
+	height: 75px;
+    color: #592323;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2)
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
+
+.cell{
+  background-color: rgb(224, 196, 153, 0.7);
+  box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.001);
+}
+/* #endregion */
+
+/* #region */ /*guestbook*/
+.slambook-container {
+    position: relative;
+    display:flex;
+    animation: transitionIn 2s;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    
+    to{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+.slambooktitle {
+position: absolute;
+top: 50px;
+left: -260px;
+}
+
+.slambook {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    height: auto;
+    color: #592323;
+    justify-content: center;
+    align-items: center;
+    top:0;
+}
+
+
+.allforms {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+}
+
+
+.slambook-form {
+    position: absolute;
+    top: 100px;
+    left:-260px;
+}
+
+
+.slambook-form-2 {
+    position: absolute;
+    top: 100px;
+    left: 60px
+}
+
+
+.slambook-fieldset-1 {
+    width: 280px;
+}
+
+
+.slambook-fieldset-2 {
+    width: 280px;
+    
+}
+.slambook-fieldset-3 {
+    width: 250px;
+    height: 175px;
+    
+}
+.slambook-fieldset-4 {
+    width: 250px;
+    height: 160px;
+}
+.messagebox {
+    width: 100%;
+    height: 100%;
+    resize:none;
+
+    background-color: rgba(237, 219, 192, 0.7);
+}
+
+.guessbook-text-input{
+    background-color: rgba(237, 219, 192, 0.7);
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    z-index: 101;
+    width: 300px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    top: 30%;
+    left: 30%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.5)
+}
+.submitbutton {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 50px;
+    height: 20px;
+    background-color: #f1cccc;
+    cursor: pointer;
+    left: 250px;
+    top: 500px;
+}
+#closebutton {
+    position: inherit;
+    top: 0;
+    right: 0;
+}
+
+
+/* #endregion */
+/* #region */ /*social*/
+.social-container {
+    position: relative;
+    display:flex;
+    animation: transitionIn 2s;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+
+    gap: 50px;
+}
+.socialboxcontainer  {
+    position: absolute;
+    display: flex;
+ 
+    
+}
+.socialbox {
+   position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.socialbutton {
+
+ 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: transform 0.2s ease-in-out;
+}
+.textsss{
+    position: absolute;
+    padding-left: 30px;
+    z-index: 2;
+}
+.socialimg {
+    position: absolute;
+    top:0;
+    width: 300px; 
+    height: 300px;
+    z-index: 1;
+    
+}
+.socialbox:hover {
+  
+  transform: scale(1.1); 
+}
+.logos {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    left: 30px;
+    z-index: 10;
+    
+}
+
+.socialtext{
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    top: 110px;
+    left: 30px;
+    z-index: 10;
+    font-size: 20px;
+    text-align: center;
+    
+}
+  /* #endregion */
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="left.css">
+</head>
+<body>
+<video id="myVideo" autoplay loop muted>
+    <source src="video/left.mp4" type="video/mp4">
+</video>
+
+<div class="button-container">
+    <a href="Home.html"  target="rightFrame" class="button"> 
+        <img src="images/buttonHome.png"  alt="home button">
+    </a>
+    <br>
+    <a href="Profile.html"  target="rightFrame" class="button"> 
+        <img src="images/buttonProfile.png"  alt="home button">
+    </a>
+    <br>
+    <a href="GuestBook.html"  target="rightFrame" class="button"> 
+        <img src="images/buttonGuest.png"  alt="home button">
+    </a>
+    <br>
+    <a href="Socials.html"  target="rightFrame" class="button"> 
+        <img src="images/buttonSocials.png"  alt="home button">
+    </a>
+
+    <div class="music-player">
+        <audio id="myAudio" src="music/Cherry.mp3" controls preload="none"></audio>
+        <button id="playPauseButton" aria-label="Play/Pause Music">
+            <img src="noteplay.png" alt="Play Button" class="button">
+        </button>
+    </div>
+ </div>
+
+ <audio id="clickSound" src="music/buttonclicksound.mp3" preload="auto"></audio>
+
+ <script>
+     const images = document.getElementsByClassName("button");
+     const sound = document.getElementById("clickSound");
+
+     // Set volume to 50% (0.5 represents 50% volume)
+     sound.volume = 0.5;
+
+     for (const image of images) {
+         image.addEventListener("click", () => {
+             sound.play();
+         });
+     }
+ </script>
+<script src="script.js"></script>
+
+</body>
+</html>

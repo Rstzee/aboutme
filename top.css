@@ -1,0 +1,26 @@
+body {
+    background-color: #c8e6f2;
+  }
+
+.logo-container {
+    position: relative;
+}
+
+  .topLogo {
+    float:right;
+    height: 60px;
+    width: auto;
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+    #myVideo {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: fill;
+      z-index: -100; 
+      
+    }

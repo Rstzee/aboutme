@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="RightPanel.css">
+</head>
+<body>
+
+
+
+  <div id="popup">
+    <p style="text-align: center;"><br>Your slambook has been submitted!<br> THANK YOU!</p>
+    <button id="closebutton" onclick="hidePopup()">Close</button>
+  </div>
+
+
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+    
+    function hidePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+    </script>
+  
+
+
+  <video id="myVideo" autoplay loop muted>
+    <source src="video/right.mp4" type="video/mp4">
+
+  </video>
+
+
+<div class="slambook-container" id="testing">
+    
+    
+    <img src="images/slambook.png" class="slambook">
+<div class="allforms">
+  <h1 class="slambooktitle">Slambook:</h1>
+  
+  <button class="submitbutton" onclick="showPopup()">Submit</button>
+  <form class="slambook-form">
+    <fieldset class="slambook-fieldset-1">
+      <legend ><h3>About Me</h3></legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required class="guessbook-text-input"><br>
+      <label for="nickname">Nickname:</label>
+      <input type="text" id="nickname" name="nickname" class="guessbook-text-input"><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" class="guessbook-text-input"><br>
+      <label for="sex-male">Male</label>
+      <input type="radio" id="sex-male" name="sex" value="male">
+      <label for="sex-female">Female</label>
+      <input type="radio" id="sex-female" name="sex" value="female"><br>
+      <label for="education">Educational Attainment:</label>
+      <select type="dropdown" id="education-dropdown"   class="guessbook-text-input">
+      <ul id="education-list" class="dropdown-content">
+        <option>Choose Level</option>
+        <optgroup label="Elementary School">
+          <option value="elementary-1">Grade 1</option>
+          <option value="elementary-2">Grade 2</option>
+          <option value="elementary-3">Grade 3</option>
+          <option value="elementary-4">Grade 4</option>
+          <option value="elementary-5">Grade 5</option>
+          <option value="elementary-6">Grade 6</option>
+        </optgroup>
+        <optgroup label="Junior High School">
+          <option value="junior-high-1">Grade 7</option>
+          <option value="junior-high-2">Grade 8</option>
+          <option value="junior-high-3">Grade 9</option>
+          <option value="junior-high-4">Grade 10</option>
+        </optgroup>
+         <optgroup label="Senior High School">
+            <option value="junior-high-5">Grade 11</option>
+            <option value="junior-high-6">Grade 12</option>
+         
+        </optgroup>
+        <optgroup label="College Undergraduate">
+          <option value="undergrad-1">1st Year</option>
+          <option value="undergrad-2">2nd Year</option>
+          <option value="undergrad-3">3rd Year</option>
+          <option value="undergrad-4">4th Year</option>
+          <option value="undergrad-5">5th Year</option>
+        </optgroup>
+        <optgroup label="Graduate Studies">
+          <option value="bachelors">Bachelor's Degree</option>
+          <option value="masters">Master's Degree</option>
+          <option value="doctorate">Doctorate Degree</option>
+        </optgroup>
+      </ul>
+    </select>
+    
+    </fieldset>
+    <fieldset class="slambook-fieldset-2">
+      <legend><h3>Favorites</h3></legend>
+      <label for="favorite_color">Color:</label>
+      <input type="color" id="favorite_color" name="favorite_color" class="guessbook-text-input"><br>
+      <label for="favorite_food">Food:</label>
+      <input type="text" id="favorite_food" name="favorite_food" class="guessbook-text-input"><br>
+      <label for="favorite_movie">Movie:</label>
+      <input type="text" id="favorite_movie" name="favorite_movie" class="guessbook-text-input"><br>
+      <label for="favorite_song"> Song:</label>
+      <input type="text" id="favorite_song" name="favorite_song" class="guessbook-text-input"><br>
+    </fieldset>
+   
+  </form>
+  <form class="slambook-form-2">
+    <fieldset class="slambook-fieldset-3">
+        <legend> <h3>Favorite Bini Member(s):</h3></legend>
+        <table>
+            <tbody>
+        
+                <tr>
+                    <td><input type="checkbox" name="Aiah" value="option1" unchecked> <label for="Aiah">Aiah</label><br>
+                        <input type="checkbox" name="Colet" value="option2"> <label for="Colet">Colet</label>  <br>
+                        <input type="checkbox" name="Jhoanna" value="option3"> <label for="Jhoanna">Jhoanna</label> <br>
+                        <input type="checkbox" name="Stacey" value="option4"><label for="Stacey">Stacey</label>  </td>
+                    <td> <input type="checkbox" name="Maloi" value="option5"><label for="Maloi">Maloi</label>  <br>
+                        <input type="checkbox" name="Mikha" value="option6"> <label for="Mikha">Mikha</label> <br>
+                        <input type="checkbox" name="Gwen" value="option7"> <label for="Gwen">Gwen</label> <br>
+                        <input type="checkbox" name="Sheena" value="option8"> <label for="Sheena">Sheena</label> </td>
+                </tr>
+            
+            </tbody>
+        </table>
+        </fieldset>
+        <fieldset class="slambook-fieldset-4">
+        <legend> <h3>Message to your self 10 years from now:</h3></legend>
+        <textarea placeholder="enter your message here." class="messagebox"></textarea>
+        </fieldset>
+  </form>
+</div>
+</div>    
+
+  </body>
+</html>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: fill;
+  z-index: -100; /* Ensures the video is behind other content */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image:
+  url("images/leftScenery.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+
+.button-container {
+    display: flex;
+    position: relative;
+    margin-top: 20%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.button {
+    display: block; 
+}
+
+.button img {
+  width: 130px; 
+  height: auto;
+}
+
+.button:hover {
+   opacity: 0.8;
+   transform: scale(1.1 ); 
+  }
+
+.music-player {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+
+#playPauseButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  
+}
+
+#playPauseButton img {
+  width: 60px; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+}
+
+/* Optional: Add hover styles for visual feedback */
+#playPauseButton:hover img {
+  opacity: 0.8;
+}
+
+#myAudio{
+  display: none;
+}
+
